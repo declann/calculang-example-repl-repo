@@ -8,6 +8,6 @@ So change the .cul.js code, and the compiler will update the compilations (curre
 
 When I create a script to run models, we can track results in similar way.
 
-This gives us a nice, controlled enviornment, without reinventing the wheel, using existing proven/best-practice developer tooling.
+This gives us a nice, controlled enviornment, without reinventing the wheel, using existing proven/best-practice tooling.
 
 TODO: tidy this up (better commit messages), setup run scripts, and move to calculang org (and restart using main branch)
