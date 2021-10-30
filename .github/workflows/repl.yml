@@ -10,9 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install modules (calculang-js)
-        run: yarn
+        run: npm install
       - name: Build
-        run: yarn run build
+        run: npm run build
       - name: Commit & Push changes
         uses: actions-js/push@master
         with:
