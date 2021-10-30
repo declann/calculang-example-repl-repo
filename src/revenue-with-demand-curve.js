@@ -129,7 +129,7 @@ const revenue = ({
   });
 }; // variable costs only, OK for testing
 
-const costs = ({}) => 100 * Object(_revenue_with_demand_curve_cul_js__WEBPACK_IMPORTED_MODULE_0__["units"])({});
+const costs = ({}) => 95 * Object(_revenue_with_demand_curve_cul_js__WEBPACK_IMPORTED_MODULE_0__["units"])({});
 const profit = ({
   price_in
 }) => revenue({
