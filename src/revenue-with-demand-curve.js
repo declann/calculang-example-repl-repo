@@ -102,39 +102,51 @@ return /******/ (function(modules) { // webpackBootstrap
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "units", function() { return units; });
 /* harmony import */ var _base_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "revenue", function() { return _base_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["a"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "revenue", function() { return _base_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["b"]; });
 
 
  // demand-curve constraint:
 
-const units = ({}) => 1000 - 200 * price(); // this model has a constraint on units so that price is the only model input, and units are derived from the price input
+const units = ({
+  price_in
+}) => 1000 - 200 * Object(_base_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* price */ "a"])({
+  price_in
+}); // this model has a constraint on units so that price is the only model input, and units are derived from the price input
 
 /***/ }),
 /* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return revenue; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return revenue; });
 /* unused harmony export costs */
 /* unused harmony export profit */
 /* unused harmony export units_ */
-/* unused harmony export price */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return price; });
 /* harmony import */ var _revenue_with_demand_curve_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 
 const revenue = ({
   price_in
 }) => {
-  return Object(_revenue_with_demand_curve_cul_js__WEBPACK_IMPORTED_MODULE_0__["units"])({}) * price({
+  return Object(_revenue_with_demand_curve_cul_js__WEBPACK_IMPORTED_MODULE_0__["units"])({
+    price_in
+  }) * price({
     price_in
   });
 }; // variable costs only, OK for testing
 
-const costs = ({}) => 99 * Object(_revenue_with_demand_curve_cul_js__WEBPACK_IMPORTED_MODULE_0__["units"])({});
+const costs = ({
+  price_in
+}) => 99 * Object(_revenue_with_demand_curve_cul_js__WEBPACK_IMPORTED_MODULE_0__["units"])({
+  price_in
+});
 const profit = ({
   price_in
 }) => revenue({
   price_in
-}) - costs({}); // inputs
+}) - costs({
+  price_in
+}); // inputs
 
 const units_ = ({
   units_in
