@@ -137,7 +137,7 @@ const revenue = ({
 
 const costs = ({
   price_in
-}) => 97 * Object(_revenue_with_demand_curve_cul_js__WEBPACK_IMPORTED_MODULE_0__["units"])({
+}) => 96 * Object(_revenue_with_demand_curve_cul_js__WEBPACK_IMPORTED_MODULE_0__["units"])({
   price_in
 });
 const profit = ({
