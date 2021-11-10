@@ -3,7 +3,7 @@ export const revenue = () => {
 };
 
 // variable costs only, OK for testing
-export const costs = () => 97 * units();
+export const costs = () => 96 * units();
 
 export const profit = () => revenue() - costs();
 
