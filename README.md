@@ -11,3 +11,5 @@ When I create a script to run models, we can track results in similar way.
 This gives us a nice, controlled enviornment, without reinventing the wheel, using existing proven/best-practice tooling.
 
 TODO: tidy this up (better commit messages), setup run scripts, and move to calculang org (and restart using main branch)
+
+NOTE: Using this template doesn't create a calculang tag, please do this so people looking for calculang models can find yours!
